@@ -8,6 +8,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define OPTIMAL_THRESHOLD ((size_t)25)
+
 volatile size_t cmpcnt;
 
 /*

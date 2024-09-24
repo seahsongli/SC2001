@@ -14,8 +14,8 @@ Timer* startTiming() {
 	Timer* timer = malloc(sizeof(Timer));
 	if (!timer) abort();
 
-	QueryPerformanceCounter(&timer->initialTick);
 	timer->performanceFrequency = f;
+	QueryPerformanceCounter(&timer->initialTick);
 	return timer;
 }
 
